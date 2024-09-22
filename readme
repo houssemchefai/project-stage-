@@ -1,0 +1,62 @@
+Project Setup Instructions
+
+1. Install Node.js
+   Download and install Node.js from the official Node.js website.
+   Node.js typically includes npm (Node Package Manager), so you'll install both simultaneously.
+
+2. Install npm (Node Package Manager)
+   If npm is not installed automatically with Node.js, you can install it manually by running:
+   bash npm install -g npm
+
+3. Download and Install MAMP
+   Download and install MAMP from the official MAMP website.
+
+4. Configure MAMP
+   Open MAMP and configure the ports:
+   Apache Port: 8888
+   Nginx Port: 80
+   MySQL Port: 8889
+   Click on "Open WebStart page" to start the server.
+
+5. Access phpMyAdmin
+   Navigate to http://localhost/phpmyadmin in your web browser.
+   Create a new database:
+   Name the database stor.
+   Choose MySQL as the database type.
+
+6. Import the Database
+   Import the stor.sql file from the project's database folder into the stor database you just created.
+
+7. Set Up the Backend API (Strapi)
+   Navigate to the API project directory:
+
+Copy code
+cd api/my-project
+Install the required dependencies:
+Copy code
+npm install
+Build the project:
+
+Copy code
+npm run build
+Start the Strapi development server:
+
+Copy code
+npm run develop
+Note: The Strapi server should now be running. You will need to create an administrator account for Strapi at this point.
+
+8. Set Up the Frontend (Client)
+   Navigate to the client project directory:
+
+Copy code
+cd project/client
+Install the required dependencies:
+
+Copy code
+npm install
+Start the development server:
+
+Copy code
+npm run dev
+
+The frontend should now be running on your local server.
